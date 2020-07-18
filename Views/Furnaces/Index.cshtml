@@ -1,0 +1,7 @@
+﻿@model IQueryable<Furnace>
+
+@foreach (Furnace f in Model)
+{
+    @Html.Partial("ProductSummary", f)
+}
+

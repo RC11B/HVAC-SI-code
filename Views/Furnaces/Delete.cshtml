@@ -1,0 +1,25 @@
+﻿@model Furnace
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> Furnace </title>
+</head>
+
+<body>
+    <h3> @Model.brand </h3>
+    <p> @Model.modelnumber </p>
+    <h4> @Model.serialnumber.ToString("f") </h4>
+    <h4> Category: @Model.year </h4>
+    <h1> Are You Sure? </h1>
+    <form method="post">
+        <button asp-action="Delete"> Delete </button>
+        <button asp-action="Index" formmethod="get">
+            Cancel
+        </button>
+    </form>
+</body>
+</html>
+

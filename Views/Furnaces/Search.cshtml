@@ -1,0 +1,21 @@
+﻿@model IQueryable<Furnace>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> Furnaces </title>
+</head>
+
+<body>
+    <hr />
+    @foreach (Furnace f in Model)
+    {
+        <h3> @f.brand </h3>
+        @f.serialnumber
+        <h4> @f.modelnumber </h4>
+        <hr />
+    }
+</body>
+</html>

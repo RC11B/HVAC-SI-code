@@ -1,0 +1,42 @@
+﻿@model Manufacturers
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> Manufacturers </title>
+</head>
+
+<body>
+    <form asp-action="Create" method="post">
+        <table>
+            <tr>
+                <th> Company Id: </th>
+                <td> <input asp-for="CompanyId" /> </td>
+            </tr>
+            <tr>
+                <th> Company Name: </th>
+                <td> <input asp-for="CompanyName" /> </td>
+            </tr>
+            <tr>
+                <th> Company Products: </th>
+                <td> <input asp-for="CompanyProducts" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="submit" value="Add Product" /> </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button>Delete</button>
+                    <button>Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

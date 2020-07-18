@@ -1,0 +1,37 @@
+﻿@model Furnace
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> Furnaces </title>
+</head>
+
+<body>
+    <form asp-action="Create" method="post">
+        <table>
+            <tr>
+                <th> Brand: </th>
+                <td> <input asp-for="brand" /> </td>
+            </tr>
+            <tr>
+                <th> Model Number: </th>
+                <td> <input asp-for="modelnumber" /> </td>
+            </tr>
+            <tr>
+                <th> Serial Number: </th>
+                <td> <input asp-for="serialnumber" /> </td>
+            </tr>
+            <tr>
+                <th> Year: </th>
+                <td> <input asp-for="year" /> </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td> <input type="submit" value="Add Product" /> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
